@@ -57,7 +57,7 @@ class MarketSpecific(Page):
     form_model = 'player'
     # question fields and whether the participant chose the right answer at first
     def get_form_fields(self):
-        auction_format = self.session.config['auction_format'].lower()
+        auction_format = self.session.config["auction_format"].lower()
 
         if auction_format == "iex":
             return ["one_ask", "hidden_order", "one_ask_right_count", "hidden_order_right_count"]
@@ -72,7 +72,7 @@ class MarketSpecific(Page):
         for question in correct_answers_dicts.keys():
             # setting correct answer per question
             if question == 'one_ask':
-                auction_format = self.session.config['auction_format'].lower()
+                auction_format = self.session.config["auction_format"].lower()
                 correct_answers[question] = correct_answers_dicts[question][auction_format]
             else:
                 correct_answers[question] = correct_answers_dicts[question]

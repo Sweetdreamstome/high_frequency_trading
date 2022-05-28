@@ -82,10 +82,10 @@ class Player(BasePlayer):
             locals()[subject] = models.StringField( # generating field from dict
                 label = q_and_a_subject["question"],
                 choices = q_and_a_subject["answers"],
-                default=''
+                default=""
             )
 
-            locals()[subject + "_right_count"] = models.StringField(default='') 
+            locals()[subject + "_right_count"] = models.StringField(default="") 
 
     del subject
     del q_and_a_subject
