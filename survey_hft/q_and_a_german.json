@@ -1,0 +1,233 @@
+{
+    "sections":
+        {
+            "general": 
+            {
+                "degree": 
+                {
+                    "question": "In welchem Studium befinden Sie sich?",
+                    "answers": 
+                    [
+                        "B.Sc.",
+                        "M.Sc.",
+                        "Ph.D."
+                    ],
+                    "correct_answ": "None"
+                },
+                "degree_backg":
+                {
+                    "question": "Hat Ihr Abschluss einen wirtschaftswissenschaftlichen Hintergrund?",
+                    "answers": 
+                    [
+                        "Ja",
+                        "Nein"
+                    ],
+                    "correct_answ": "None"
+                },
+                "video_clarity":
+                {
+                    "question": "Wie beurteilen Sie die Verständlichkeit der Videoanleitung?",
+                    "answers": 
+                    [
+                        "1","2","3","4","5"
+                    ],
+                    "correct_answ": "None"
+                },
+                "video_confusing":
+                {
+                    "question": "Fanden Sie Teile der Instruktionen verwirrend? Falls ja, welche?",
+                    "answers": 
+                    [
+                        "None"
+                    ],
+                    "correct_answ": "None"
+                },
+                "interface_clarity":
+                {
+                    "question": "Wie beurteilen Sie die Verständlichkeit der Benutzeroberfläche?",
+                    "answers": 
+                    [
+                        "1","2","3","4","5"
+                    ],
+                    "correct_answ": "None"
+                },
+                "interface_confusing":
+                {
+                    "question": "Fanden Sie Teile der Benutzeroberfläche verwirrend? Falls ja, welche?",
+                    "answers": 
+                    [
+                        "None"
+                    ],
+                    "correct_answ": "None"
+                },
+                "suggestions":
+                {
+                    "question": "Haben Sie Verbesserungsvorschläge, sind Sie auf Fehler gestoßen oder haben Sie das Gefühl, dass das Experiment nicht richtig funktioniert hat? Wir freuen uns über jedes Feedback, das uns hilft, die Benutzererfahrung zu verbessern.",
+                    "answers": 
+                    [
+                        "None"
+                    ],
+                    "correct_answ": "None"
+                }
+            },
+            "inventory": 
+            {
+                "trader_inv":
+                {
+                    "question": "Angenommen, Sie haben zu einem bestimmten Zeitpunkt während der Handelsperiode einen Aktienbestand von 10 Einheiten und erhöhen die Inventory Sensitivity erheblich. Was wird voraussichtlich in den folgenden Sekunden passieren?",
+                    "answers": 
+                    [
+                        "Der Aktienbestand wird voraussichtlich sinken und gegen 0 gehen.",
+                        "Der Aktienbestand wird voraussichtlich schnell ansteigen.",
+                        "Der Aktienbestand wird bei genau 10 Einheiten verbleiben.",
+                        "Der Aktienbestand wird kurz darauf auf minus 10 Einheiten sinken.",
+                        "Es wird nichts passieren."
+                    ],
+                    "correct_answ": "Der Aktienbestand wird voraussichtlich sinken und gegen 0 gehen."
+                },
+                "implicit_cost":
+                {
+                    "question": "Was ist ein Nachteil einer Erhöhung der Inventory Sensitivity?",
+                    "answers": 
+                    [
+                        "Ihr Bot wird sich weniger auf profitablen Handel und mehr auf den Ausgleich Ihres Aktienbestandes konzentrieren, was voraussichtlich schlechtere Preise für Sie zur Folge haben wird.",
+                        "Ihr Bot wird sich ausschließlich auf profitablen Handel konzentrieren, was voraussichtlich zu hohen positiven oder hohen negativen Aktienbeständen und damit zu hohen Abzügen am Ende der Handelsperiode führen wird.",
+                        "Ihr Bot konzentriert sich ausschließlich auf die Preise des externen Marktes, was dazu führen kann, dass Sie die Momente verpassen, in denen Ihr eigener Markt schneller agiert.",
+                        "Ihr Bot konzentriert sich ausschließlich auf die Preise auf Ihrem eigenen Markt, was dazu führen kann, dass Sie die Momente verpassen, in denen der externe Markt schneller agiert.",
+                        "Es gibt keine Nachteile, wenn Sie den Schieberegler für die Bestandsempfindlichkeit erhöhen."
+                    ],
+                    "correct_answ": "Ihr Bot wird sich weniger auf profitablen Handel und mehr auf den Ausgleich Ihres Aktienbestandes konzentrieren, was voraussichtlich schlechtere Preise für Sie zur Folge haben wird."
+                },
+                "end_trading_pos":
+                {
+                    "question": "Angenommen, Sie beenden die Handelsperiode mit einem PBD (Payoff Before Deduction) von 100 ECU und einem positiven Aktienbestand von 10 Einheiten. Es werden Abzüge in Höhe von 10 % fällig und der Referenzpreis beträgt ebenfalls 100 ECU. Wie hoch ist Ihr auszahlungsrelevanter Payoff?",
+                    "answers": 
+                    [
+                        "Der Abzug beläuft sich auf 10 x 100 x 0,1 = 100 ECU. Der Abzug muss vom PBD in Höhe von 100 ECU abgezogen werden, so dass Ihr Payoff 0 ECU beträgt.",
+                        "Der Abzug beläuft sich auf 10 x 100 x 0,1 = 100 ECU. Der Abzug muss zum PBD in Höhe von 100 ECU addiert werden, so dass Ihr Payoff 200 ECU beträgt.",
+                        "Der Inventarwert in Höhe von 10 x 100 = 1000 ECU muss zum PBD in Höhe von 100 ECU hinzuaddiert werden, so dass Ihr Payoff 1100 ECU beträgt.",
+                        "Der Inventarwert in Höhe von 10 x 100 = 1000 ECU muss vom PBD in Höhe von 100 ECU abgezogen werden, so dass Ihr Payoff -900 ECU beträgt."
+                    ],
+                    "correct_answ": "Der Abzug beläuft sich auf 10 x 100 x 0,1 = 100 ECU. Der Abzug muss vom PBD in Höhe von 100 ECU abgezogen werden, so dass Ihr Payoff 0 ECU beträgt."
+                },
+                "end_trading_neg":
+                {
+                    "question": "Angenommen, Sie beenden die Handelsperiode mit einem PBD (Payoff Before Deduction) von 100 ECU und einem negativen Aktienbestand von -10 Einheiten. Es werden Abzüge in Höhe von 10 % fällig und der Referenzpreis beträgt ebenfalls 100 ECU. Wie hoch ist Ihr auszahlungsrelevanter Payoff?",
+                    "answers": 
+                    [
+                        "Der Abzug beläuft sich auf |-10 x 100 x 0,1| = 100 ECU. Der Abzug muss vom PBD in Höhe von 100 ECU abgezogen werden, so dass Ihr Payoff 0 ECU beträgt.",
+                        "Der Abzug beläuft sich auf |-10 x 100 x 0,1| = 100 ECU. Der Abzug muss zum PBD in Höhe von 100 ECU addiert werden, so dass Ihr Payoff 200 ECU beträgt.",
+                        "Der Inventarwert in Höhe von 10 x 100 = 1000 ECU muss zum PBD in Höhe von 100 ECU hinzuaddiert werden, so dass Ihr Payoff 1100 ECU beträgt.",
+                        "Der Inventarwert in Höhe von 10 x 100 = 1000 ECU muss vom PBD in Höhe von 100 ECU abgezogen werden, so dass Ihr Payoff -900 ECU beträgt."
+                    ],
+                    "correct_answ": "Der Abzug beläuft sich auf |-10 x 100 x 0,1| = 100 ECU. Der Abzug muss vom PBD in Höhe von 100 ECU abgezogen werden, so dass Ihr Payoff 0 ECU beträgt."
+                }
+            },
+            "external_market": 
+            {
+                "increase_ext":
+                {
+                    "question": "Suppose you significantly increase the external sensitivity at a certain point in the trading period. What is likely to happen if, shortly thereafter, the best bid and best ask in the external market increase significantly?",
+                    "answers": 
+                    [
+                        "Both, your bid and ask increase following the external market.",
+                        "Both, your bid and ask decrease opposing the external market.",
+                        "It is likely that neither your bid nor ask will change.",
+                        "It is likely that your bid increases, while your ask decreases.",
+                        "It is likely that your bid decreases, while your ask increases."
+                    ],
+                    "correct_answ": "Both, your bid and ask increase following the external market."
+                },
+                "implicit_cost_1":
+                {
+                    "question": "What is a disadvantage of setting the external sensitivity slider up to 1?",
+                    "answers": 
+                    [
+                        "Your bot focuses exclusively on the prices of the external market, which might cause you to miss the moments when your own market reacts faster.",
+                        "Your bot focuses exclusively on the prices on your own market, which might cause you to miss the moments when the external market reacts faster.",
+                        "Your bot will focus less on profitable trading and more on balancing the inventory, which will most likely result in you receiving poorer prices.",
+                        "Your bot will focus solely on profitable trading, which will most likely result in high positive or negative inventories and thus higher deduction payment.",
+                        "There are no disadvantages associated with increasing the external sensitivity slider up to 1."
+                    ],
+                    "correct_answ": "Your bot focuses exclusively on the prices of the external market, which might cause you to miss the moments when your own market reacts faster."
+                },
+                "implicit_cost_0":
+                {
+                    "question": "What is a disadvantage of setting the external sensitivity slider to 0?",
+                    "answers": 
+                    [
+                        "Your bot focuses exclusively on the prices of the external market, which might cause you to miss the moments when your own market reacts faster.",
+                        "Your bot focuses exclusively on the prices on your own market, which might cause you to miss the moments when the external market reacts faster.",
+                        "Your bot will focus less on profitable trading and more on balancing the inventory, which will most likely result in you receiving poorer prices.",
+                        "Your bot will focus solely on profitable trading, which will most likely result in high positive or negative inventories and thus higher deduction payment.",
+                        "There are no disadvantages associated with increasing the external sensitivity slider."
+                    ],
+                    "correct_answ": "Your bot focuses exclusively on the prices on your own market, which might cause you to miss the moments when the external market reacts faster."
+                }
+            },    
+            "speed": 
+            {
+                "two_players":
+                {
+                    "question": "Suppose two players (Anna and Tim) operate in the same market and have the same high sensitivity to the external market. Suppose they also have the same low inventory sensitivity. The only difference is that Anna has speed on, whereas Tim has speed off. Whose bid and ask will change faster when the prices on your own market or the external market move?",
+                    "answers": 
+                    [
+                        "Anna's bid and ask will change faster in response to price movements on either market.",
+                        "Tim's bid and ask will change faster in response to price movements on either market.",
+                        "Anna's bid and ask will change faster if the prices on the external market move, while Tim's bid and ask will change faster if the prices on their own market move.",
+                        "Tim's bid and ask will change faster if the prices on the external market move, while Anna's bid and ask will change faster if the prices on their own market move.",
+                        "Anna and Tim's bid and ask will change equally fast in response to price movements."
+                    ],
+                    "correct_answ": "Anna's bid and ask will change faster in response to price movements on either market."
+                },
+                "three_min":
+                {
+                    "question": "Assuming you turn on speed for 3 Minutes, what is your cost?",
+                    "answers": 
+                    [
+                        "180 * 0.01 = 1.8 ECU",
+                        "180 * 0.1 = 18 ECU",
+                        "180 * 1 = 180 ECU",
+                        "180 * 10 = 1800 ECU",
+                        "The speed option does not create costs."
+                    ],
+                    "correct_answ": "180 * 0.01 = 1.8 ECU"
+                }
+            },
+            "market_specific_design": 
+            {
+                "one_ask": 
+                {
+                    "question": "Suppose there exists exactly one ask in the market at 99 ECU and that Anna places a bid at 100 ECU right at the beginning of the trading period. One second later, Tim also places a bid at 100 ECU. What would happen?",
+                    "answers": 
+                    [
+                        "The bids are processed serially, which means Anna's bid will be executed against the ask, while Tim's bid enters the orderbook.",
+                        "Both bids are processed simultaneously, it is randomly determined which bid will be executed against the ask, the other bid will enter the orderbook.",
+                        "Both bids enter the orderbook at 100 ECU.",
+                        "Anna's bid will be executed against the ask at the end of the trading period.",
+                        "Tim's bid will be executed against the ask at the end of the trading period."
+                    ],
+                    "correct_answ": 
+                    {
+                        "cda": "The bids are processed serially, which means Anna's bid will be executed against the ask, while Tim's bid enters the orderbook.",
+                        "iex": "The bids are processed serially, which means Anna's bid will be executed against the ask, while Tim's bid enters the orderbook.",
+                        "fba": "Both bids are processed simultaneously, it is randomly determined which bid will be executed against the ask, the other bid will enter the orderbook."
+                    }
+                },
+                "hidden_order":
+                {
+                    "question": "What are the two distinctive features of hidden order?",
+                    "answers": 
+                    [
+                        "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and the market participants cannot observe whether there exist hidden orders at  the black bar or not.",
+                        "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and all market participants can observe whether hidden orders exist at the black bar or not.",
+                        "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and these orders can be placed only by you and the other human market participants.",
+                        "The automated investors adjust the price of these orders according to your behavior and the behavior of the other human market participants, none of the market participants can observe whether there exist hidden orders at the black bar or not.",
+                        "Hidden orders cannot be distinguished from ordinary limit or market orders."
+                    ],
+                    "correct_answ": "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and the market participants cannot observe whether there exist hidden orders at  the black bar or not."
+                }
+            }
+        }
+}
+
