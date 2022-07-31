@@ -156,27 +156,27 @@
             {
                 "two_players":
                 {
-                    "question": "Suppose two players (Anna and Tim) operate in the same market and have the same high sensitivity to the external market. Suppose they also have the same low inventory sensitivity. The only difference is that Anna has speed on, whereas Tim has speed off. Whose bid and ask will change faster when the prices on your own market or the external market move?",
+                    "question": "Angenommen, zwei Spieler (Anna und Tim) sind auf demselben Markt tätig und haben die gleiche, hohe Empfindlichkeit gegenüber dem externen Markt. Angenommen, sie haben auch die gleiche, niedrige Bestandsempfindlichkeit. Der einzige Unterschied besteht darin, dass Anna die Geschwindigkeit eingeschaltet hat, während Tim die Geschwindigkeit ausgeschaltet hat. Wessen Bid und Ask werden sich schneller ändern, sobald sich die Preise auf dem eigenen Markt oder auf dem externen Markt verändern?",
                     "answers": 
                     [
-                        "Anna's bid and ask will change faster in response to price movements on either market.",
-                        "Tim's bid and ask will change faster in response to price movements on either market.",
-                        "Anna's bid and ask will change faster if the prices on the external market move, while Tim's bid and ask will change faster if the prices on their own market move.",
-                        "Tim's bid and ask will change faster if the prices on the external market move, while Anna's bid and ask will change faster if the prices on their own market move.",
-                        "Anna and Tim's bid and ask will change equally fast in response to price movements."
+                        "Annas Bid und Ask werden sich schneller ändern, unabhängig davon auf welchem Markt eine Preisänderung stattfindet.",
+                        "Tims Bid und Ask werden sich schneller ändern, unabhängig davon auf welchem Mark die Preisänderung stattfindet.",
+                        "Annas Bid und Ask werden sich schneller ändern, falls sich die Preise auf dem externen Markt verändern, während sich Tims Bid und Ask schneller ändern, falls sich die Preise auf dem eigenen Markt verändern.",
+                        "Tims Bid und Ask werden sich schneller ändern, falls sich die Preise auf dem externen Markt verändern, während sich Annas Bid und Ask schneller ändern, falls sich die Preise auf dem eigenen Markt verändern.",
+                        "Das Bid und Ask von Anna und Tim ändern sich gleich schnell, unabhängig davon auf welchem Markt die Preisänderung stattfindet."
                     ],
-                    "correct_answ": "Anna's bid and ask will change faster in response to price movements on either market."
+                    "correct_answ": "Annas Bid und Ask werden sich schneller ändern, unabhängig davon auf welchem Markt eine Preisänderung stattfindet."
                 },
                 "three_min":
                 {
-                    "question": "Assuming you turn on speed for 3 Minutes, what is your cost?",
+                    "question": "Angenommen, Sie schalten die schnellere Geschwindigkeit für 3 Minuten ein, wie hoch sind Ihre Kosten?",
                     "answers": 
                     [
                         "180 * 0.01 = 1.8 ECU",
                         "180 * 0.1 = 18 ECU",
                         "180 * 1 = 180 ECU",
                         "180 * 10 = 1800 ECU",
-                        "The speed option does not create costs."
+                        "Die Geschwindigkeitsoption verursacht keine Kosten."
                     ],
                     "correct_answ": "180 * 0.01 = 1.8 ECU"
                 }
