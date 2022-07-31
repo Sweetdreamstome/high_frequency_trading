@@ -185,34 +185,33 @@
             {
                 "one_ask": 
                 {
-                    "question": "Suppose there exists exactly one ask in the market at 99 ECU and that Anna places a bid at 100 ECU right at the beginning of the trading period. One second later, Tim also places a bid at 100 ECU. What would happen?",
+                    "question": "Angenommen, es gibt genau ein Ask auf dem Markt und es beträgt 99 ECU. Anna gibt gleich zu Beginn der Handelsperiode ein Bid zu 100 ECU ab. Eine Sekunde später gibt Tim ebenfalls ein Bid zu 100 ECU ab. Was geschieht infolgedessen?",
                     "answers": 
                     [
-                        "The bids are processed serially, which means Anna's bid will be executed against the ask, while Tim's bid enters the orderbook.",
-                        "Both bids are processed simultaneously, it is randomly determined which bid will be executed against the ask, the other bid will enter the orderbook.",
-                        "Both bids enter the orderbook at 100 ECU.",
-                        "Anna's bid will be executed against the ask at the end of the trading period.",
-                        "Tim's bid will be executed against the ask at the end of the trading period."
+                        "Die Gebote werden nacheinander verarbeitet, d.h. Annas Bid wird gegen das ausstehende Ask ausgeführt, während Tims Bid in das Orderbuch aufgenommen wird.",
+                        "Beide Gebote werden gleichzeitig verarbeitet, es wird zufällig bestimmt, welches Bid gegen das ausstehende Ask ausgeführt wird und welches Bid in das Orderbuch aufgenommen wird.",
+                        "Beide Gebote werden zu 100 ECU in das Orderbuch eingetragen.",
+                        "Annas Bid wird am Ende der Handelsperiode gegen das ausstehende Ask ausgeführt.",
+                        "Tims Bid wird am Ende der Handelsperiode gegen das ausstehende Ask ausgeführt."
                     ],
                     "correct_answ": 
                     {
-                        "cda": "The bids are processed serially, which means Anna's bid will be executed against the ask, while Tim's bid enters the orderbook.",
-                        "iex": "The bids are processed serially, which means Anna's bid will be executed against the ask, while Tim's bid enters the orderbook.",
-                        "fba": "Both bids are processed simultaneously, it is randomly determined which bid will be executed against the ask, the other bid will enter the orderbook."
+                        "cda": "Die Gebote werden nacheinander verarbeitet, d.h. Annas Bid wird gegen das ausstehende Ask ausgeführt, während Tims Bid in das Orderbuch aufgenommen wird.",
+                        "iex": "Die Gebote werden nacheinander verarbeitet, d.h. Annas Bid wird gegen das ausstehende Ask ausgeführt, während Tims Bid in das Orderbuch aufgenommen wird.",
+                        "fba": "Beide Gebote werden gleichzeitig verarbeitet, es wird zufällig bestimmt, welches Bid gegen das ausstehende Ask ausgeführt wird und welches Bid in das Orderbuch aufgenommen wird."
                     }
                 },
                 "hidden_order":
                 {
-                    "question": "What are the two distinctive features of hidden order?",
+                    "question": "Was sind die beiden besonderen Merkmale eines unsichtbaren Gebots?",
                     "answers": 
                     [
-                        "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and the market participants cannot observe whether there exist hidden orders at  the black bar or not.",
-                        "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and all market participants can observe whether hidden orders exist at the black bar or not.",
-                        "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and these orders can be placed only by you and the other human market participants.",
-                        "The automated investors adjust the price of these orders according to your behavior and the behavior of the other human market participants, none of the market participants can observe whether there exist hidden orders at the black bar or not.",
-                        "Hidden orders cannot be distinguished from ordinary limit or market orders."
+                        "Die Börse passt den Preis dieser Gebote automatisch an, gekennzeichnet durch den schwarzen vertikalen Balken. Menschliche Teilnehmer können nicht beobachten, ob unsichtbare Gebote zum Preis des schwarzen Balkens existieren oder nicht.",
+                        "Die Börse passt den Preis dieser Gebote automatisch an, gekennzeichnet durch den schwarzen vertikalen Balken. Menschliche Teilnehmer können beobachten, ob unsichtbare Gebote zum Preis des schwarzen Balkens existieren oder nicht.",
+                        "Die automatisierten Investoren passen den Preis der unsichtbaren Gebote in Abhängigkeit von Ihrem Verhalten und dem der anderen menschlichen Marktteilnehmer an. Kein Marktteilnehmer kann beobachten, ob unsichtbare Gebote existieren oder nicht.",
+                        "Unsichtbare Gebote unterscheiden sich nicht von gewöhnlichen Limit- oder Market Orders."
                     ],
-                    "correct_answ": "The exchange automatically adjusts the price of these orders, which is indicated by the black vertical bar, and the market participants cannot observe whether there exist hidden orders at  the black bar or not."
+                    "correct_answ": "Die Börse passt den Preis dieser Gebote automatisch an, gekennzeichnet durch den schwarzen vertikalen Balken. Menschliche Teilnehmer können nicht beobachten, ob unsichtbare Gebote zum Preis des schwarzen Balkens existieren oder nicht."
                 }
             }
         }
