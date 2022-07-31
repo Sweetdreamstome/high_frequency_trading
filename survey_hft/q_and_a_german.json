@@ -127,29 +127,29 @@
             {
                 "increase_ext":
                 {
-                    "question": "Suppose you significantly increase the external sensitivity at a certain point in the trading period. What is likely to happen if, shortly thereafter, the best bid and best ask in the external market increase significantly?",
+                    "question": "Angenommen, Sie erhöhen die External Feed Sensitivity zu einem bestimmten Zeitpunkt in der Handelsperiode erheblich. Was wird voraussichtlich passieren, falls kurz darauf das beste Bid und das beste Ask auf dem externen Markt deutlich ansteigen?",
                     "answers": 
                     [
-                        "Both, your bid and ask increase following the external market.",
-                        "Both, your bid and ask decrease opposing the external market.",
-                        "It is likely that neither your bid nor ask will change.",
-                        "It is likely that your bid increases, while your ask decreases.",
-                        "It is likely that your bid decreases, while your ask increases."
+                        "Sowohl Ihr Bid als auch Ihr Ask steigen infolge des Preisanstiegs auf dem externen Markt.",
+                        "Sowohl Ihr Bid als auch Ihr Ask sinken im Gegensatz zum Preisanstieg auf dem externen Markt.",
+                        "Sowohl Ihr Bid als auch Ihr Ask werden sich voraussichtlich nicht ändern.",
+                        "Ihr Bid wird voraussichtlich steigen, während Ihr Ask sinkt.",
+                        "Ihr Bid wird voraussichtlich sinken, während Ihr Ask steigt."
                     ],
-                    "correct_answ": "Both, your bid and ask increase following the external market."
+                    "correct_answ": "Sowohl Ihr Bid als auch Ihr Ask steigen infolge des Preisanstiegs auf dem externen Markt."
                 },
                 "implicit_cost_1":
                 {
-                    "question": "What is a disadvantage of setting the external sensitivity slider up to 1?",
+                    "question": "Welchen Nachteil hat es, den Schieberegler der External Feed Sensitivity auf 1 zu setzen?",
                     "answers": 
                     [
-                        "Your bot focuses exclusively on the prices of the external market, which might cause you to miss the moments when your own market reacts faster.",
-                        "Your bot focuses exclusively on the prices on your own market, which might cause you to miss the moments when the external market reacts faster.",
-                        "Your bot will focus less on profitable trading and more on balancing the inventory, which will most likely result in you receiving poorer prices.",
-                        "Your bot will focus solely on profitable trading, which will most likely result in high positive or negative inventories and thus higher deduction payment.",
-                        "There are no disadvantages associated with increasing the external sensitivity slider up to 1."
+                        "Ihr Bot konzentriert sich ausschließlich auf die Preise des externen Marktes, was dazu führen kann, dass Sie die Momente verpassen, in denen Ihr eigener Markt schneller agiert.",
+                        "Ihr Bot konzentriert sich ausschließlich auf die Preise des eigenen Marktes, was dazu führen kann, dass Sie die Momente verpassen, in denen der externe Markt schneller agiert.",
+                        "Ihr Bot konzentriert sich weniger auf den profitablen Handel und mehr auf den Ausgleich Ihres Aktienbestandes.",
+                        "Ihr Bot konzentriert sich ausschließlich auf den profitablen Handel, was zu hohen Abzugszahlungen führen kann.",
+                        "Es gibt keinen Nachteil."
                     ],
-                    "correct_answ": "Your bot focuses exclusively on the prices of the external market, which might cause you to miss the moments when your own market reacts faster."
+                    "correct_answ": "Ihr Bot konzentriert sich ausschließlich auf die Preise des externen Marktes, was dazu führen kann, dass Sie die Momente verpassen, in denen Ihr eigener Markt schneller agiert."
                 },
                 "implicit_cost_0":
                 {
