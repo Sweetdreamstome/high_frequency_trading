@@ -1,8 +1,11 @@
+from tkinter import N
 from otree.api import Currency as c, currency_range
 from ._builtin import Page, WaitPage
 from .models import Constants, get_correct_answers
 
 
+class Comprehension_questions(Page):
+    pass
 
 class General(Page):
     form_model = 'player'
@@ -23,6 +26,7 @@ class Inventory(Page):
                   Constants.q_and_a_sections["inventory"].keys()] 
     def vars_for_template(self):
         return get_correct_answers(Constants.q_and_a_sections, "inventory")
+    
 
 
 class ExternalMarket(Page):
@@ -34,6 +38,7 @@ class ExternalMarket(Page):
 
     def vars_for_template(self):
         return get_correct_answers(Constants.q_and_a_sections, "external_market")
+    
 
 
 class Speed(Page):
@@ -47,11 +52,12 @@ class Speed(Page):
         return get_correct_answers(Constants.q_and_a_sections, "speed")
 
 
+
 class MarketSpecific(Page):
     form_model = 'player'
     # question fields and whether the participant chose the right answer at first
     def get_form_fields(self):
-        auction_format = self.session.config['auction_format'].lower()
+        auction_format = self.session.config["auction_format"].lower()
 
         if auction_format == "iex":
             return ["one_ask", "hidden_order", "one_ask_right_count", "hidden_order_right_count"]
@@ -66,16 +72,18 @@ class MarketSpecific(Page):
         for question in correct_answers_dicts.keys():
             # setting correct answer per question
             if question == 'one_ask':
-                auction_format = self.session.config['auction_format'].lower()
+                auction_format = self.session.config["auction_format"].lower()
                 correct_answers[question] = correct_answers_dicts[question][auction_format]
             else:
                 correct_answers[question] = correct_answers_dicts[question]
         
         output = {**correct_answers, **{"auction": auction_format}} # adding auction format to output
         return output
+    
 
 page_sequence = [
     General,
+    Comprehension_questions,
     Inventory,
     ExternalMarket,
     Speed,
